@@ -1,2 +1,2 @@
 # Custom_tmux
-# Custom-tmux
+## ./install.sh
