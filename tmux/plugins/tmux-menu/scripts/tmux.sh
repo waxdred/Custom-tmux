@@ -9,6 +9,7 @@ show_menu() {
         "" ""\
         "Copy-mode"           y "run -b 'tmux copy-mode'" \
         "Paste Buffer"        p "run -b 'tmux choose-buffer'" \
+        "Popup fzf"           F "run -b '~/.tmux/plugins/tmux-fzf/main.sh'" \
         ""\
         "#[fg=colour202]Split Window" ""\
         "" ""\
@@ -23,8 +24,8 @@ show_menu() {
         "Kill Session"       w "run -b 'tmux kill-window'"\
         "#[fg=cyan]For move in Window shit+arrow           " ""\
         ""\
-        "Rename Session"       r "run -b 'read && tmux rename-window $var'"\
-        "#[fg=cyan]Prefix + $ for rename Session" ""\
+        "Open note"          n "run -b '~/.tmux/plugins/tmux-note-popup/scripts/tmux-note-popup.sh'"\
+        "Prefix + $ for rename Session" ""\
         "" ""\
         "Syncro Pane" ""\
         "" ""\
