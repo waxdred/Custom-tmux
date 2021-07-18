@@ -1,6 +1,8 @@
 #!/bin/bash
 
 install(){
+    echo "install Tmux"
+    brew install tmux
     echo "copy .tmux"
     cp -R $PWD/tmux $HOME/.tmux
     echo "copy .tmux.conf"

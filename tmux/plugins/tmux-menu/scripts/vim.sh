@@ -18,6 +18,8 @@ show_menu() {
         "Shit + tab                    change window" ""\
         ""\
         ":Lex                          Open Tab dir" ""\
+        ""\
+        ":g/NAME/d                     Delette all line with pattern" ""\
         "" ""\
         "#[align=centre fg=colour202] Tips Move" ""\
         "" ""\
