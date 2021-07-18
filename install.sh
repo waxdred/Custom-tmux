@@ -10,6 +10,10 @@ install(){
     echo "copy .tmux.conf"
     cp $PWD/tmux.conf $HOME/.tmux.conf
     git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    wget https://github.com/tmux/tmux/releases/download/3.1c/tmux-3.1c.tar.gz
+    tar xopf tmux-3.1c.tar.gz
+    rm -rf $HOME/.brew/Cellar/tmux/3.2
+    mv tmux-3.1c $HOME/.brew/Cellar/tmux/3.1c
     tmux source ~/.tmux.conf
     echo "Prefix + I, for install the plugins"
     echo "well done"
